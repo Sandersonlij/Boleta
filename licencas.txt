@@ -1,0 +1,24 @@
+# Boleta Pro V5 — Licencas
+#
+# Cada linha = um cliente. Formato:
+#   account|server|expiration|alias
+#
+# - account    : numero da conta MT4 (ex: 1234567)
+# - server     : nome exato do servidor da corretora (ex: XPMT4-PRD)
+#                use "*" para qualquer servidor (NAO recomendado)
+# - expiration : data de expiracao no formato YYYY-MM-DD
+#                use 9999-12-31 para licenca vitalicia
+# - alias      : apelido livre para sua referencia (sem |)
+#
+# Linhas comecando com '#' sao ignoradas.
+# Para revogar um cliente, apague ou comente a linha dele.
+#
+# === CLIENTES ATIVOS ===
+
+1234567|XPMT4-PRD|2026-12-31|JoaoSilva-Anual
+2345678|ClearPRD|9999-12-31|MariaSantos-Vitalicia
+3456789|*|2026-03-15|PedroOliveira-Trimestral
+
+# === REVOGADOS / CHARGEBACK (mantidos como historico) ===
+
+#9999999|XPMT4-PRD|2025-01-01|FraudeXYZ-revogado-2025-02-10
